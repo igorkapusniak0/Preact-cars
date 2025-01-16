@@ -1,26 +1,18 @@
 import { LocationProvider, Router, Route, hydrate, prerender as ssr } from 'preact-iso';
-import CarList from './components/CarList.jsx';
-import { Header } from './components/Header.jsx';
+import { Header } from './components/Header';
 import './style.css';
-
-const cardArray = [
-	{title: "bmw"},
-	{title: "merc"},
-	{title: "Toyota"}
-]
+import { Home } from './pages/Home/index.jsx';
 
 export function App() {
-	
-	return (
-		<LocationProvider>
+	return(
+		<>
 			<Header />
-			<main>
-				<CarList cards={cardArray}/>
-			</main>
-			
-		</LocationProvider>
+			<br/>
+			<Home/>
+		</>
 		
-	);
+		
+	)
 }
 
 if (typeof window !== 'undefined') {

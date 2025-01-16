@@ -4,6 +4,7 @@ import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { Grid } from '@mui/material';
+import ListItem from '@mui/material';
 
 export function CarCard({ car }) {
   return (
@@ -15,19 +16,18 @@ export function CarCard({ car }) {
       <Typography variant="h4" sx={{ color: 'text.primary' }}>
         {car.model}
       </Typography>
-      <br></br>
       <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
   <Grid item xs={6}>
-    1
+    <Item>1</Item>
   </Grid>
   <Grid item xs={6}>
-    2
+    <Item>2</Item>
   </Grid>
   <Grid item xs={6}>
-    3
+    <Item>3</Item>
   </Grid>
   <Grid item xs={6}>
-    4
+    <Item>4</Item>
   </Grid>
 </Grid>
       <CardActions>

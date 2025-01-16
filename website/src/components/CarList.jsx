@@ -15,7 +15,10 @@ function CarList(props) {
         <div>
             {props.cards.map((car) => {
                 return(
-                    <CarCard key={car.title} car={car} />
+                    <>
+                        <CarCard key={car.title} car={car} />
+                        <br/>
+                    </>
                 )
             }
             )}
